@@ -1,7 +1,7 @@
 {
 	"name": "robot-gui",
 	"private": true,
-	"version": "0.2.1",
+	"version": "0.3.0",
 	"main": "./electron/output/main/index.js",
 	"scripts": {
 		"start": "vite",
