@@ -1,3 +1,4 @@
+import react from '@vitejs/plugin-react';
 import { defineConfig, splitVendorChunkPlugin } from 'electron-vite';
 import { resolve } from 'path';
 import path from 'path';
@@ -30,7 +31,7 @@ const configuration = defineConfig(({ mode }) => {
 			}
 		},
 		renderer: {
-			plugins: [splitVendorChunkPlugin()],
+			plugins: [react(), splitVendorChunkPlugin()],
 			server: { port: +env.VITE_ELECTRON_PORT, open: false },
 			preview: { port: +env.VITE_ELECTRON_PORT_PREVIEW, open: false },
 			root: '.',
