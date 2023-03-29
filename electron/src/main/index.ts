@@ -4,8 +4,10 @@ import { join } from 'path';
 
 const isDevelopment = process.env.NODE_ENV === 'development';
 
-function createWindow(): void {
-	// create the browser window.
+/**
+ * create window
+ */
+const createWindow = async () => {
 	const mainWindow = new BrowserWindow({
 		width: 900,
 		height: 670,
@@ -40,7 +42,7 @@ function createWindow(): void {
 	} else {
 		mainWindow.loadFile(join(__dirname, '../renderer/index.html'));
 	}
-}
+};
 
 // this method will be called when Electron has finished
 // initialization and is ready to create browser windows.
