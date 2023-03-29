@@ -2,7 +2,7 @@
 	"name": "robot-gui",
 	"private": true,
 	"version": "0.2.1",
-	"type": "module",
+	"main": "./electron/output/main/index.js",
 	"scripts": {
 		"start": "vite",
 		"build": "tsc && vite build",
@@ -17,16 +17,21 @@
 		"release": "release-it",
 		"release:major": "yarn release-it -- major --ci",
 		"release:minor": "yarn release-it -- minor --ci",
-		"release:patch": "yarn release-it -- patch --ci"
+		"release:patch": "yarn release-it -- patch --ci",
+		"electron:start": "electron-vite dev",
+		"electron:preview": "electron-vite preview",
+		"electron:build": "electron-vite build"
 	},
 	"dependencies": {
+		"@electron-toolkit/preload": "^1.0.3",
+		"@electron-toolkit/utils": "^1.0.2",
 		"@fontsource/open-sans": "^4.5.14",
 		"dayjs": "^1.11.7",
 		"i18next": "^22.4.13",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
 		"react-i18next": "^12.2.0",
-		"sass": "^1.59.3"
+		"sass": "^1.60.0"
 	},
 	"devDependencies": {
 		"@commitlint/cli": "^17.5.0",
@@ -38,6 +43,9 @@
 		"@typescript-eslint/eslint-plugin": "^5.56.0",
 		"@typescript-eslint/parser": "^5.56.0",
 		"@vitejs/plugin-react": "^3.1.0",
+		"electron": "^23.2.0",
+		"electron-builder": "^23.6.0",
+		"electron-vite": "^1.0.21",
 		"eslint": "^8.36.0",
 		"eslint-config-prettier": "^8.8.0",
 		"eslint-plugin-prettier": "^4.2.1",
