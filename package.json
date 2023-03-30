@@ -25,6 +25,8 @@
 		"packages:update": "ncu -u && sudo rm -R node_modules && sudo rm yarn.lock && yarn && yarn cache clean"
 	},
 	"dependencies": {
+		"@electron-toolkit/preload": "^1.0.3",
+		"@electron-toolkit/utils": "^1.0.2",
 		"@fontsource/open-sans": "^4.5.14",
 		"dayjs": "^1.11.7",
 		"i18next": "^22.4.13",
@@ -35,8 +37,6 @@
 	"devDependencies": {
 		"@commitlint/cli": "^17.5.1",
 		"@commitlint/config-conventional": "^17.4.4",
-		"@electron-toolkit/preload": "^1.0.3",
-		"@electron-toolkit/utils": "^1.0.2",
 		"@release-it/conventional-changelog": "^5.1.1",
 		"@types/node": "^18.15.11",
 		"@types/react": "^18.0.31",
