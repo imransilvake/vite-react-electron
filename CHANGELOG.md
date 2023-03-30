@@ -1,5 +1,13 @@
 
 
+## [0.3.1](https://gitlab.robotise.eu/robotise/roc/frontend/robot-gui/compare/0.3.0...0.3.1) (2023-03-30)
+
+
+### Bug Fixes
+
+* Preview build ([e097f92](https://gitlab.robotise.eu/robotise/roc/frontend/robot-gui/commit/e097f928a5c40d370f146f7e02cc78ef9c3c4d0f))
+* Typescript typing ([5680e6f](https://gitlab.robotise.eu/robotise/roc/frontend/robot-gui/commit/5680e6f3fa646a7b1ee037a80be8b14a02c8781e))
+
 # [0.3.0](https://gitlab.robotise.eu/robotise/roc/frontend/robot-gui/compare/0.2.1...0.3.0) (2023-03-29)
 
 
