@@ -20,7 +20,9 @@
 		"release:patch": "yarn release-it -- patch --ci",
 		"electron:start": "electron-vite dev",
 		"electron:preview": "electron-vite preview",
-		"electron:build": "electron-vite build"
+		"electron:build": "electron-vite build",
+		"packages:check": "ncu",
+		"packages:update": "ncu -u && sudo rm -R node_modules && sudo rm yarn.lock && yarn && yarn cache clean"
 	},
 	"dependencies": {
 		"@electron-toolkit/preload": "^1.0.3",
