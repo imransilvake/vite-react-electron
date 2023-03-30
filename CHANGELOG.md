@@ -1,5 +1,12 @@
 
 
+## [0.3.2](https://gitlab.robotise.eu/robotise/roc/frontend/robot-gui/compare/0.3.1...0.3.2) (2023-03-30)
+
+
+### Reverts
+
+* Revert "refactor: Update package.json" ([88cf135](https://gitlab.robotise.eu/robotise/roc/frontend/robot-gui/commit/88cf1353cda337652126fc7f164df60dabda6976))
+
 ## [0.3.1](https://gitlab.robotise.eu/robotise/roc/frontend/robot-gui/compare/0.3.0...0.3.1) (2023-03-30)
 
 
