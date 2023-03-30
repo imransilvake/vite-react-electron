@@ -4,9 +4,6 @@ import { join } from 'path';
 
 const isDevelopment = process.env.NODE_ENV === 'development';
 
-/**
- * create window
- */
 const createWindow = async () => {
 	const mainWindow = new BrowserWindow({
 		width: 900,
